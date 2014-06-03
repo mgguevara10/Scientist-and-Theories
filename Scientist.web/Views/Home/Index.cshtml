@@ -1,0 +1,44 @@
+﻿@model List<Scientist.DataModels.Theory>
+@{
+    ViewBag.Title = "Home Page";
+}
+<br />
+<div class="well TableHeadWell">
+    <span class="TableWellTitle">Theories</span>
+</div>
+<table class="table table-hover TheoryTable">
+    <thead>
+        <tr>
+            <td class="Theory TheoryHead">Theory Name</td>
+            <td class="Theory TheoryHead">Scientist</td>
+            <td class="Theory TheoryHead">Details</td>
+            <td style="width: 40px;" class="Theory Theory">Delete</td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var x in Model)
+        {
+            <tr id="@x.Id">
+                <td class="Theory">@x.Name</td>
+                <td class="Theory">@x.Scientist</td>
+                <td class="Theory">@x.Details</td>
+                <td style="width: 40px;"><button type="button" class="btn btn-danger DeleteButton" onclick="DeleteTheory(@x.Id)">Delete</button></td>
+            </tr>
+        }
+    </tbody>
+</table>
+<script type="text/javascript">
+    function DeleteTheory (id) {
+        var url = "/api/APITheory/" + id;
+        $.ajax({
+            type: "Delete",
+            url: url,
+            //        data: comment,
+            //        dataType: "json",
+            success: function () { $("#" + id).remove(); },
+            error: function () { alert("ERRRRRRRRORRRRRR"); }
+        });
+    };
+</script>
+@*window.location.href = "/Home/Index/";*@
+<link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>

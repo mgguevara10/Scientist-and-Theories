@@ -1,0 +1,18 @@
+﻿@model Scientist.DataModels.Theory
+
+@{
+    ViewBag.Title = "CreateTheory";
+}
+
+<h2>CreateTheory</h2>
+<form method="post">
+    <div class="well">
+        @Html.LabelFor(x => x.Name) <br />
+        @Html.TextBoxFor(x => x.Name) <br />
+        @Html.LabelFor(x => x.Scientist) <br />
+        @Html.TextBoxFor(x => x.Scientist) <br />
+        @Html.LabelFor(x => x.Details) <br />
+        @Html.TextBoxFor(x => x.Details) <br />
+        <button type="submit" class="btn">Submit Theory</button>
+    </div>
+</form>

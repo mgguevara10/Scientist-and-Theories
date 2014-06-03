@@ -1,0 +1,93 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background: url(http://www.newscientist.com/data/images/ns/cms/mg20627551.200/mg20627551.200-3_500.jpg) fixed no-repeat;
+    background-size: 100% auto;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.TableHeadWell {
+    padding: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    border: 1px solid rgb(51, 49, 49);
+    border-radius: 0px;
+    background-color: rgba(66, 66, 66, 0.70);
+}
+.TheoryTable {
+    padding-top: 0px;
+    margin-top: 0px;
+}
+.TableWellTitle {
+    font-size: 2em;
+    width: 100%;
+    line-height: 50px;
+    margin-left: 6px;
+    font-family: Calligraffitti;
+    color: lightgrey;
+    text-align: center;
+    font-weight: 900;
+}
+.table {
+    background: rgba(124, 120, 120, 0.7);
+    border: 1px solid rgb(51, 49, 49);
+    border-top-color: rgb(51, 49, 49);
+    padding-top: 0px;
+    margin-top: 0px;
+    color: lightgrey;
+}
+.table td {
+    border: 1px solid rgb(51, 49, 49);
+}
+.DeleteButton {
+    background-color: rgb(51, 49, 49);
+    border-color: rgb(51, 49, 49);
+}
+.DeleteButton:hover {
+    background-color: #9c9c9c;
+    border-color: rgb(51, 49, 49);
+}
+.Theory {
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+.TheoryHead {
+    font-weight: bolder;
+    text-align: center;
+}
